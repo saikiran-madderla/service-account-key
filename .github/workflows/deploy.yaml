@@ -29,7 +29,6 @@ jobs:
     - name: Deploy Cloud Function
       run: |
         gcloud functions deploy send_notification \
-          --no-gen2
           --runtime python310 \
           --trigger-topic SA-Alert \
           --entry-point send_notification \
